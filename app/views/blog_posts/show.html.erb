@@ -2,3 +2,13 @@
     <h2><%= @blog_post.title%></h2>
     <%= @blog_post.body%>
 </div>
+
+<br>
+
+<div>
+    <%= link_to 'Edit Post', edit_blog_post_path %>
+</div>
+
+<br>
+
+<%= link_to 'Home Page', root_path %>
