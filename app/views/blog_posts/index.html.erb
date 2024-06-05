@@ -1,11 +1,14 @@
-<h1>Amias Yaska</h1>
-<div>
-    <% @blog_posts.each do |blog_post|%>
-        <h2><%= link_to blog_post.title, blog_post%></h2>
-        <%= blog_post.body%>
-    <% end %>
-</div>
-<br>
-<div> 
-    <h3><%= link_to 'New Post', new_blog_post_path if user_signed_in? %></h3>
-</div>
+<body class="prose mx-auto">
+    <h1>Amias Yaska</h1>
+    <div>
+        <% @blog_posts.each do |blog_post|%>
+            <h2><%= link_to blog_post.title, blog_post%></h2>
+            <%= blog_post.body%>
+        <% end %>
+    </div>
+    <br>
+    <div> 
+        <h3><%= link_to 'New Post', new_blog_post_path if user_signed_in? %></h3>
+    </div>
+</body>
+
