@@ -13,6 +13,13 @@
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
+    <div> 
+      <% if user_signed_in?%>
+        <%= link_to 'Profile', edit_user_registration_path %>
+      <% end %>
+        
+    </div>
+
   <body>
     <%= yield %>
   </body>
